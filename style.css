@@ -1,0 +1,129 @@
+.custom-navbar {
+    background-color: #ff5733;
+    border-radius: 0 0 15px 15px;
+}
+
+.custom-search {
+    border: 3px solid black;
+}
+
+.logo {
+    width: 75px;
+}
+
+.logo:hover {
+    animation: logoHover 0.25s ease-in-out;
+    filter: drop-shadow(0px 0px 10px #4444dd);
+    width: 85px;
+}
+
+.logo:not(:hover) {
+    animation: logoUnHover 0.25s ease-in-out;
+}
+
+@keyframes logoHover {
+    0% {
+        filter: drop-shadow(0px 0px 0px #4444dd);
+        width: 75px;
+    }
+    100% {
+        filter: drop-shadow(0px 0px 10px #4444dd);
+        width: 85px;
+    }
+}
+
+@keyframes logoUnHover {
+    0% {
+        filter: drop-shadow(0px 0px 10px #4444dd);
+        width: 85px;
+    }
+    100% {
+        filter: drop-shadow(0px 0px 0px #4444dd);
+        width: 75px;
+    }
+}
+
+@keyframes nav-item-hover {
+    0% {
+        background-color: #ff5733;
+        color: black;
+    }
+    100% {
+        background-color: #b83e23;
+        color: white;
+    }
+}
+
+@keyframes nav-item-unhover {
+    0% {
+        background-color: #b83e23;
+        color: white;
+    }
+    100% {
+        background-color: #ff5733;
+        color: black;
+    }
+}
+
+.navTitle {
+    padding-left: 2%;
+}
+
+.nav-item {
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 50%;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    animation: nav-item-hover 0.25s ease-in-out;
+    background-color: #b83e23;
+    color: white;
+}
+
+.nav-item:not(:hover) {
+    animation: nav-item-unhover 0.25s ease-in-out;
+}
+
+.centered-title {
+    margin: auto;
+    margin-top: 15px;
+}
+
+.nav-items-center {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-main-page {
+    background-color: gray;
+    height: 400px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.carousel-main-page img {
+    height: 400px;
+}
+
+.info-text {
+    margin-top: 100px;
+}
+.website-footer {
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 15px 15px 0 0;
+    background-color: gray;
+}
